@@ -43,21 +43,3 @@ while True:
 
 
 
-'''conversation = [
-    "Hello",
-    "Hi there!",
-    "How are you doing?",
-    "I'm doing great",
-    "That is good to hear",
-    "Thank you.",
-    "You're welcome.",
-]
-'''
-
-'''chatbot.set_trainer(ListTrainer)
-chatbot.train(conversation)'''
-
-#getting response
-
-'''response = chatbot.get_response("Good Morning!")
-print(response)'''
