@@ -7,6 +7,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./dummy.py" ]
+EXPOSE 8000
 
-EXPOSE 80
+CMD [ "python", "./dummy.py", "-p 8000" ]
