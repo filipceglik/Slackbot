@@ -2,7 +2,7 @@
 
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
-chatbot = ChatBot('Dummy')
+
 
 chatbot = ChatBot('Dummy',
                   storage_adapter='chatterbot.storage.JsonFileStorageAdapter',
@@ -13,7 +13,8 @@ chatbot = ChatBot('Dummy',
                       'chatterbot.logic.TimeLogicAdapter',
                       'chatterbot.logic.BestMatch'
                   ],
-                  database='./database.json')
+                  database='./database.json',
+                  silence_performance_warning=True)
 
 #training
 
